@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture                  
+
+\cvname{Kavish} % Your name
+\cvjobtitle{Agnihotri} % Job title/career 
+\cvdate{01 November 1996} % Date of birth
+\cvaddress{kavish.agnihotri@iiitb.org} % Email address
+\cvnumberphone{+91 7879630218} % Phone number
+\cvsite{} % Personal website
+\cvmail{linkedin.com/in/KavishAgnihotri} % Email address
+%\cvaddress{dipinknair619@gmail.com} % Email address
+%\cvmailto{dipinknair619@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	 Education
+%----------------------------------------------------------------------------------------
+
+\Education{M.Tech Computer Science, International Institute of Information Technology Bangalore
+\newline \newline B.Tech Computer Science LNCTS Bhopal | 2018 | GPA:8.20/10}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{Languages: C, C++, Java
+\newline
+\newline WebDev : HTML, CSS
+\newline
+\newline Storage : S3
+\newline
+\newline Networking : API GATEWAY, ELB,VPC
+\newline
+\newline DevOPS : CodeCommit, CodeBuild, CodeDeploy,CloudFormation(IaaC) 
+\newline
+\newline Foundation : StepFunction, SNS,SQS, SES
+\newline 
+\newline Monitoring: CloudWatch, Metrics/Events/Logs
+\newline 
+\newline Security: IAM, SecurityGroup
+}
+
+\Strength{}
+\Skills{Languages: C, C++, Java}
+\Hobbies{Français: Bilingue
+\newline Anglais: Courant}
+
+
+%%----------------------------------------------------------------------------------------
+%%	 SKILLS
+%%----------------------------------------------------------------------------------------
+%
+%% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+%
+%%------------------------------------------------
+%
+%% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+%\section{Work Experience}
+%
+%\begin{twenty} % Environment for a list with descriptions
+%	\twentyitem{2016 Sep}{Senior FEA Analyst - General Motors | Bangalore}{2.5 Years}{- Gear Macro \& Micro geometry optimisaiton and stress analysis\\- Component level FE analysis of shafts, Differential, Gears (Manual \&   Automatic)\\- Subroutine development of bearing in Abaqus\\- Meshing automation \\- Participated on teardown of transmissions and engines\\- Various postprocessing automation using Excel VBA\\- DFSS Green Belt}
+%	\twentyitem{May-Aug'16}{Student Intern - General Motors | Bangalore}{3 Months}{- Automation of Abaqus system modeling(substrucure method) using   VBA scripting\\- Correlation of MASTA and Abaqus on simple shaft model for validating substructure method}
+%	\twentyitem{May-Aug'15}{Student Intern - Smartron India Pvt Ltd | Bangalore.}{3 months}{Industrial designing of smartphone}
+%	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+%\end{twenty}
+
+\section{Expérience Professionnelle}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{Janvier 2018}{ Consultant Cloud AWS - eDigitalis}{}{
+	\newline UCPA - Interfaçage avec un Système de réservation
+	\\- Réalisation et validation du document d’architecture
+	\\- Implementation des Lambda et StepFunction couplés à des CloudWatch Rules et des DynamoDB et stockage des résultats sur S3
+	\\- Mise en place d’une CI/CD en utilisant CodeCommit, CodeBuild, CloudFormation et CodePipeline
+	\\- Mise en place d’alarmes basées sur des métriques CloudWatch branchées à des SNS pour envoyer des notifications par mail dans le cas d’un incident
+\newline\newline UCPA - Rationalisation du processus de recrutement 
+\\- Interfaçage avec une solution de signature électronique avec AWS pour signer les contrats, en utilisant des Lambda et des StepFunction pour communiquer avec les API du fournisseur et réaliser le workflow
+\\- Stockage des contrats cryptés sur S3 en utilisant une clé KMS et création des rôles et groupes IAM adéquats
+\\- Envoi d’emails tout au long du cycle de vie d’un contrat en utilisant SES
+\\- CI/CD et alarmes CloudWatch
+\newline\newline UCPA - Interfaçage avec un PIM (Product Information Manager) 
+\\- Implémentation d’un processus avec des Lambda et des StepFunction de récupération, transformation et enrichissement des données du PIM en interrogeant un GraphQL et stockage sur S3 des résultats
+\\- Livraison des résultats obtenus sur un FTP
+\\- CI/CD et alarmes CloudWatch
+\newline\newline UCPA - Intégration d’un système de paiement 
+\\- Implémentation d’un serveur TCP/IP ExpressJS/NodeJS permettant de récupérer les paiements générés sous forme de Trame TCP/IP à partir de la plateforme de réservation hébergé sur une EC2
+\\- Mise en place d’un mécanisme de monitoring du processus NodeJS en utilisant le composant PM2
+\\- Récupération des logs générés par le processus TCP/IP sur CloudWatch en utilisant un CloudWatch agent, création des metriques et alarmes
+\\- Mise en place d’une CI/CD en utilisant CodeCommit, CodeBuild, CodeDeploy et CodePipeline
+%
+\newline\newline Korian - Réalisation, mise en place et maintenance d’une architecture AWS pour un site Drupal 
+\\- Réalisation et validation du document d’architecture suivant les données collectées au préalable concernant la volumétrie et les performances souhaités par le client
+\\- Création des différents Templates CloudFormation pour provisionner les différentes ressources nécessaires à la mise en place de l’architecture
+\\- Mise en place de l’architecture comprenant des rôles IAM, un ELB, un groupe AutoScale, des VPC, une EC2 servant de Bastion, un AMI comprenant le code source Drupal et une base de données Aurora
+\\- Mise en place d’une CI/CD en utilisant CodeCommit, CodeDeploy pour assurer l’intégration continue de l’application Drupal et le passage fluide entre l’environnement de recette et celui de production
+}
+	\twentyitem{Juin 2016}{Développeur Full Stack Symfony2/AngularJS - GFI Tunisie}{}
+	{- Projet2: Registre Social Unifié (RSU): Symfony3, AngularJS 1.5, Bootstrap 3, MSSQL, PostgreSQL
+	\\- Projet1: Rapport Visite Client : Symfony3, AngularJS 1.5, Bootstrap 3, REST, MySQL }
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+%%----------------------------------------------------------------------------------------
+%%	 INTERESTS
+%%----------------------------------------------------------------------------------------
+%
+%\section{Interests}
+%
+%Manufacturing, Design \& FEA Analysis
+%\newline Robbotics, Data Science \& Automation
+%
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+
+
+%\section{Achievements}
+%
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{2011}{Secured 2763 in JEE out of 0.5 Million students appeared\\Secured State level 101 AIEEE  out of 1.5 Million students appeared\\Secured 56th rank in KEAM out of 0.135 Million students appeared}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+%Studied nonlocal theory of elasticity which takes account of remote action forces between atoms
+%
+%This causes the stresses to depend on the strains not only at an individual point
+%under consideration, but at all points of the body
+%
+%Mechanical behavior calculated by Classical elastic theory will differ from non
+%local theory
+
+
+
+
+
+
+%
+%\begin{twenty} % Environment for a short list with no descriptions
+%	\twentyitem{Honors}{Nonlocal Effect on the Frequency Analysis of Carbon Nanotubes}{\\ Dr. Ashok Kumar Pandey}{}
+%
+%	\twentyitem{Academic}{Matlab code for the area filling algorithm for 3d printing}{\\ Dr. Surya. S Kumar}{}
+%
+%	\twentyitem{Academic}{Epoxy photo elasticity experiment to find stress concentration factor}{\\ Dr. M. Ramji}{}
+%
+%	\twentyitem{Academic}{Stress and strain analysis of Ice Screw using FEA}{\\  Dr. Viswanath Chinthapenta}{}
+
+%	\twentyitem{Mini}{micro cantilever beam for sensing application}{\\ Dr.Prem Pal}{Making a model to explain charecterestics and working of cantilever beam for practical aspects}
+
+
+%\twentyitem{Indpendent}{Produced magnetic breaking(without any friction) on Aluminium wheel with help of strong magnet}{}{}
+%
+%
+%\end{twenty}
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\section{Other information}
+%
+%\subsection{Review}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
