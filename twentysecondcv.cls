@@ -177,7 +177,7 @@
 		%------------------------------------------------
 	    
                       \ifthenelse{\equal{\skills}{}}{}{
-			\profilesection{Compétences}
+			\profilesection{Skills}
 			\begin{flushleft}
 				\skills
 			\end{flushleft}
@@ -192,7 +192,7 @@
 		}
 
 	    \ifthenelse{\equal{\Hobbies}{}}{}{
-			\profilesection{Langues}
+			\profilesection{Extra-Curricular}
 			\begin{flushleft}
 				\Hobbies
 			\end{flushleft}
